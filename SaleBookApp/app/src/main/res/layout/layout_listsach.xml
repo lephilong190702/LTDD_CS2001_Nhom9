@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@drawable/bookbackground"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_sach"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:scaleType="center"/>
+    <TextView
+        android:id="@+id/tv_tensach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Tên sách"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_giasach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Giá sách" />
+        <TextView
+            android:id="@+id/tv_khuyenmai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#A0A0A0"
+            android:textStyle="bold"
+            android:text="Ưu đãi" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUA"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

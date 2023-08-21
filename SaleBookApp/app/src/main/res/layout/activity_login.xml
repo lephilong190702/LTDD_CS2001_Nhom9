@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvw_DangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edt_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvw_DangNhap"
+        android:layout_marginTop="50dp"
+        android:hint="Nhập email"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_perm_identity_24"
+        android:drawablePadding="15dp"/>
+    <EditText
+        android:id="@+id/edt_PassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_UserName"
+        android:layout_marginTop="50dp"
+        android:hint="Nhập mật khẩu"
+        android:singleLine="true"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btn_DangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_PassWord"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng nhập"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/design_default_color_secondary_variant"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_DangNhap"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tvw_QuenMatKhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu? "
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvw_DangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lnr_MangXaHoi"
+        android:text="Hoặc đăng nhập với"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:id="@+id/lnr_MangXaHoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/iconfb"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icongg"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/icontwitter"/>
+    </LinearLayout>
+</RelativeLayout>

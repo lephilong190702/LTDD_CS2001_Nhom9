@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvw_RegDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edt_RegUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvw_RegDangKy"
+        android:layout_marginTop="50dp"
+        android:hint="Nhập tài khoản"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_perm_identity_24"
+        android:drawablePadding="15dp"/>
+    <EditText
+        android:id="@+id/edt_RegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_RegUserName"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập email"
+        android:singleLine="true"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="15dp"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/edt_RegPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_RegEmail"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập mật khẩu"
+        android:singleLine="true"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/edt_ConfirmPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_RegPassWord"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập lại mật khẩu"
+        android:singleLine="true"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/btn_DangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_ConfirmPassWord"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng ký"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/design_default_color_secondary_variant"/>
+    <TextView
+        android:id="@+id/tvw_XacNhanMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Đã có tài khoản?"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+</RelativeLayout>
