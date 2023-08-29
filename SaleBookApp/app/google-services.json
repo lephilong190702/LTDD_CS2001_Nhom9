@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "377715819704",
+    "firebase_url": "https://salebookapp-1547f-default-rtdb.firebaseio.com",
+    "project_id": "salebookapp-1547f",
+    "storage_bucket": "salebookapp-1547f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377715819704:android:0476b05068adab8501e04d",
+        "android_client_info": {
+          "package_name": "com.example.salebookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377715819704-0dspajshg8icn5u1lo298um9416qugkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjaJDIHd4C-4gXw50n4z14KQRusGuVmhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377715819704-0dspajshg8icn5u1lo298um9416qugkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
